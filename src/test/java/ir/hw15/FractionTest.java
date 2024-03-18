@@ -5,6 +5,25 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FractionTest {
+    @Test
+    public void testSetNumerator() {
+        Fraction fraction = new Fraction(2, 3);
+        int newNumerator = 5;
+
+        fraction.setNumerator(newNumerator);
+
+        assertEquals(newNumerator, fraction.getNumerator());
+    }
+
+    @Test
+    public void testSetDenominator() {
+        Fraction fraction = new Fraction(2, 3);
+        int newDenominator = 5;
+
+        fraction.setDenominator(newDenominator);
+
+        assertEquals(newDenominator, fraction.getDenominator());
+    }
 
     @Test
     void add() {
