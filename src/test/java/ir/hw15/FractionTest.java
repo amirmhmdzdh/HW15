@@ -62,5 +62,13 @@ class FractionTest {
 
     @Test
     void toFloatingPoint() {
+        Fraction fraction = new Fraction(2, 3);
+        double expected = 0.6666666666666666;
+
+        double floatingPloint = fraction.toFloatingPoint();
+
+        assertEquals(expected, floatingPloint);
+
+
     }
 }
