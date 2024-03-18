@@ -21,11 +21,20 @@ class FractionTest {
 
     @Test
     void sub() {
+        Fraction fraction1 = new Fraction(2, 3);
+        Fraction fraction2 = new Fraction(3, 4);
+        Fraction expected = new Fraction(-1, 12);
+
+        Fraction difference = fraction1.sub(fraction2);
+
+        assertEquals(expected.getNumerator(), difference.getNumerator());
+        assertEquals(expected.getDenominator(), difference.getDenominator());
 
     }
 
     @Test
     void mul() {
+
     }
 
     @Test
