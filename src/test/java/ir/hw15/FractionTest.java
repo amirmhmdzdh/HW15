@@ -34,6 +34,15 @@ class FractionTest {
 
     @Test
     void mul() {
+        Fraction fraction1 = new Fraction(2, 3);
+        Fraction fraction2 = new Fraction(3, 4);
+        Fraction expected = new Fraction(6, 12);
+
+        Fraction difference = fraction1.mul(fraction2);
+
+        assertEquals(expected.getNumerator(), difference.getNumerator());
+        assertEquals(expected.getDenominator(), difference.getDenominator());
+
 
     }
 
