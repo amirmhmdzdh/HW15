@@ -48,6 +48,16 @@ class FractionTest {
 
     @Test
     void div() {
+        Fraction fraction1 = new Fraction(2, 3);
+        Fraction fraction2 = new Fraction(3, 4);
+        Fraction expected = new Fraction(8, 9);
+
+        Fraction difference = fraction1.div(fraction2);
+
+        assertEquals(expected.getNumerator(), difference.getNumerator());
+        assertEquals(expected.getDenominator(), difference.getDenominator());
+
+
     }
 
     @Test
