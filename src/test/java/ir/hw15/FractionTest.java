@@ -1,5 +1,6 @@
 package ir.hw15;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -26,6 +27,7 @@ class FractionTest {
     }
 
     @Test
+    @DisplayName("Test Addition")
     void add() {
         Fraction fraction1 = new Fraction(2, 3);
         Fraction fraction2 = new Fraction(3, 4);
@@ -39,6 +41,7 @@ class FractionTest {
     }
 
     @Test
+    @DisplayName("Test Subtraction")
     void sub() {
         Fraction fraction1 = new Fraction(2, 3);
         Fraction fraction2 = new Fraction(3, 4);
@@ -52,6 +55,7 @@ class FractionTest {
     }
 
     @Test
+    @DisplayName("Test multiplication")
     void mul() {
         Fraction fraction1 = new Fraction(2, 3);
         Fraction fraction2 = new Fraction(3, 4);
@@ -66,6 +70,7 @@ class FractionTest {
     }
 
     @Test
+    @DisplayName("Test Division")
     void div() {
         Fraction fraction1 = new Fraction(2, 3);
         Fraction fraction2 = new Fraction(3, 4);
@@ -80,6 +85,7 @@ class FractionTest {
     }
 
     @Test
+    @DisplayName("Test FloatingPoint")
     void toFloatingPoint() {
         Fraction fraction = new Fraction(2, 3);
         double expected = 0.6666666666666666;
