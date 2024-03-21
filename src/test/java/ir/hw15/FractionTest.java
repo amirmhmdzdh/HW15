@@ -1,5 +1,6 @@
 package ir.hw15;
 
+import ir.hw15.Q1.Fraction;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

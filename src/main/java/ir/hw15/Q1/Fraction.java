@@ -1,4 +1,4 @@
-package ir.hw15;
+package ir.hw15.Q1;
 
 public class Fraction {
     private int numerator;
