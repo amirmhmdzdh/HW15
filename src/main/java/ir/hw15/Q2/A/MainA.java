@@ -1,6 +1,8 @@
 package ir.hw15.Q2.A;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -10,7 +12,7 @@ import java.time.LocalDate;
 public class MainA {
     public static void main(String[] args) {
 
-        // Create Table
+        // ---------------Create Table------------------------
 
         StandardServiceRegistry build = new StandardServiceRegistryBuilder()
                 .configure()
@@ -22,6 +24,15 @@ public class MainA {
                 .buildSessionFactory();
 
 
-       // Person person = new Person(1, "Amir", "mhmdzdh", LocalDate.of(1380, 11, 25));
+        //----------Insert in table--------------------
+
+        Person person = new Person(1, "Amir", "mhmdzdh", LocalDate.of(1380, 11, 25));
+
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.merge(person);
+        transaction.commit();
+
+
     }
 }
