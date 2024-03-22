@@ -67,12 +67,11 @@ public class PersonRepository {
         }
     }
 
-    public List<Person> loadAll() {
+    public void loadAll() {
         Session session = sessionFactory.openSession();
         List<Person> persons = session.createQuery("FROM Person").list();
         session.close();
         System.out.println(persons);
-        return persons;
     }
 
     public boolean contains(int id) {
