@@ -53,7 +53,14 @@ public class MainA {
 
         //-------------loadAll Method--------------------
 
-        personRepository.loadAll();
+
+        // personRepository.loadAll();
+
+
+        //-------------contains Method--------------------
+
+        System.out.println(personRepository.contains(1));
+
 
     }
 }
