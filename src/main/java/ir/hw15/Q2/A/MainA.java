@@ -48,8 +48,12 @@ public class MainA {
 
         //-------------delete Method--------------------
 
-        personRepository.delete(2);
+//        personRepository.delete(2);
 
+
+        //-------------loadAll Method--------------------
+
+        personRepository.loadAll();
 
     }
 }
