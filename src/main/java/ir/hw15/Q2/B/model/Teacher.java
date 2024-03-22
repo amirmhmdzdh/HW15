@@ -14,10 +14,14 @@ import lombok.*;
 @NoArgsConstructor
 @Entity
 public class Teacher extends Person {
+
     private String teacherCode;
+
     private String educationDegree;
+
     @Convert(converter = DegreeConverter.class)
     private Degree teacherRank;
+
     private double monthlySalary;
 
 }
