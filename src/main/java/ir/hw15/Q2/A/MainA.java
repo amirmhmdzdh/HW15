@@ -42,8 +42,14 @@ public class MainA {
 
         //-------------Update Method--------------------
 
-        Person person2 = new Person(3, "Ali", "bagheri", LocalDate.of(1350, 5, 4));
-        personRepository.update(person2);
+//        Person person2 = new Person(3, "Ali", "bagheri", LocalDate.of(1350, 5, 4));
+//        personRepository.update(person2);
+
+
+        //-------------delete Method--------------------
+
+        personRepository.delete(2);
+
 
     }
 }
