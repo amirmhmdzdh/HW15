@@ -13,7 +13,9 @@ import lombok.*;
 public class Student extends Person {
 
     private String studentCode;
+
     private String fieldOfStudy;
+
     private int entryYear;
 
 }
