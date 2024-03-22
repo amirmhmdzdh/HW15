@@ -26,13 +26,18 @@ public class MainA {
 
         //----------Insert in table--------------------
 
-        Person person = new Person(1, "Amir", "mhmdzdh", LocalDate.of(1380, 11, 25));
+//        Person person = new Person(1, "Amir", "mhmdzdh", LocalDate.of(1380, 11, 25));
+//
+//        Session session = sessionFactory.openSession();
+//        Transaction transaction = session.beginTransaction();
+//        session.merge(person);
+//        transaction.commit();
 
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.beginTransaction();
-        session.merge(person);
-        transaction.commit();
+        //-------------Save Method--------------------
 
+        Person person1 = new Person(null, "Ali", "karimi", LocalDate.of(1350, 5, 5));
+        PersonRepository personRepository = new PersonRepository(sessionFactory);
+        personRepository.save(person1);
 
     }
 }
