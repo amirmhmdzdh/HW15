@@ -1,10 +1,9 @@
-package ir.hw15.Q2;
+package ir.hw15.Q2.A;
 
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 @ToString
 @Getter
