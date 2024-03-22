@@ -23,6 +23,7 @@ public class MainA {
                 .buildMetadata()
                 .buildSessionFactory();
 
+        PersonRepository personRepository = new PersonRepository(sessionFactory);
 
         //----------Insert in table--------------------
 
@@ -35,9 +36,14 @@ public class MainA {
 
         //-------------Save Method--------------------
 
-        Person person1 = new Person(null, "Ali", "karimi", LocalDate.of(1350, 5, 5));
-        PersonRepository personRepository = new PersonRepository(sessionFactory);
-        personRepository.save(person1);
+//        Person person1 = new Person(null, "Ali", "karimi", LocalDate.of(1350, 5, 5));
+//        personRepository.save(person1);
+
+
+        //-------------Update Method--------------------
+
+        Person person2 = new Person(3, "Ali", "bagheri", LocalDate.of(1350, 5, 4));
+        personRepository.update(person2);
 
     }
 }
