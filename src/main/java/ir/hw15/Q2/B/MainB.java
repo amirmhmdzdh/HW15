@@ -33,13 +33,13 @@ public class MainB {
 
         //-------------SignUp Teacher--------------------
 
-        TeacherService teacherService = new TeacherService(personRepository);
-        teacherService.signUp("karim", "filom", LocalDate.of(1340, 6, 6), "A12", "PHD", Degree.PROFESSOR, 120.00);
+//        TeacherService teacherService = new TeacherService(personRepository);
+//        teacherService.signUp("karim", "filom", LocalDate.of(1340, 6, 6), "A12", "PHD", Degree.PROFESSOR, 120.00);
 
 
-//-------------SignUp Student--------------------
-//        StudentService studentService = new StudentService(personRepository);
-//        studentService.signUp("hassanykachal", "shalgham", LocalDate.of(1350, 4, 4), "B12", "ensani", 2011);
-//
+//             -------------SignUp Student--------------------
+        StudentService studentService = new StudentService(personRepository);
+        studentService.signUp("hassanykachal", "shalgham", LocalDate.of(1381, 4, 9), "B12", "ensani", 2011);
+
     }
 }
