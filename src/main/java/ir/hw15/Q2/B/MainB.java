@@ -38,8 +38,8 @@ public class MainB {
 
 
 //             -------------SignUp Student--------------------
-        StudentService studentService = new StudentService(personRepository);
-        studentService.signUp("hassanykachal", "shalgham", LocalDate.of(1381, 4, 9), "B12", "ensani", 2011);
+//        StudentService studentService = new StudentService(personRepository);
+//        studentService.signUp("hassanykachal", "shalgham", LocalDate.of(1381, 4, 9), "B12", "ensani", 2011);
 
     }
 }
