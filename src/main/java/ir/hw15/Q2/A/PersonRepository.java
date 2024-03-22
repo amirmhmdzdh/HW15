@@ -1,6 +1,5 @@
 package ir.hw15.Q2.A;
 
-import ir.hw15.Q2.A.Person;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
