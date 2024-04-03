@@ -38,7 +38,7 @@ public class MainB {
 
 //             -------------SignUp Teacher--------------------
 
-//        teacherService.signUp("karim", "filom", LocalDate.of(1340, 6, 6), "A12", "PHD", Degree.PROFESSOR, 120.00);
+//        teacherService.signUp("omid", "shadi", LocalDate.of(1380, 6, 6), "A12", "PHD", Degree.PROFESSOR, 120.00);
 
 
 //             -------------SignUp Student--------------------

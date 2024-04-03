@@ -2,9 +2,10 @@ package ir.hw15.Q2.B.model;
 
 import ir.hw15.Q2.A.Person;
 import ir.hw15.Q2.B.Enum.Degree;
-import ir.hw15.Q2.B.Enum.DegreeConverter;
 import jakarta.persistence.Convert;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.*;
 
 @ToString
@@ -21,7 +22,8 @@ public class Teacher extends Person {
 
     private String educationDegree;
 
-    @Convert(converter = DegreeConverter.class)
+    // @Convert(converter = DegreeConverter.class)
+    @Enumerated(EnumType.STRING)
     private Degree teacherRank;
 
     private double monthlySalary;
