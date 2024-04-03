@@ -22,7 +22,6 @@ public class Teacher extends Person {
 
     private String educationDegree;
 
-    // @Convert(converter = DegreeConverter.class)
     @Enumerated(EnumType.STRING)
     private Degree teacherRank;
 
