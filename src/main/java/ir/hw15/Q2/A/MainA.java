@@ -55,17 +55,17 @@ public class MainA {
         //-------------loadAll Method--------------------
 
 
-       //  personRepository.loadAll();
+       //    personRepository.loadAll();
 
 
         //-------------contains Method--------------------
 
-        //  System.out.println(personRepository.contains(1));
+        // System.out.println(personRepository.contains(1));
 
 
         //-------------SignUP Method--------------------
 
-       // personService.signUp("test3", "karhg");
+        //  personService.signUp("test3", "karhg");
 
 
     }

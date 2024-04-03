@@ -6,6 +6,8 @@ import ir.hw15.Q2.A.PersonService;
 import ir.hw15.Q2.B.Enum.Degree;
 import ir.hw15.Q2.B.model.Student;
 import ir.hw15.Q2.B.model.Teacher;
+import ir.hw15.Q2.B.repository.StudentRepository;
+import ir.hw15.Q2.B.repository.TeacherRepository;
 import ir.hw15.Q2.B.service.StudentService;
 import ir.hw15.Q2.B.service.TeacherService;
 import org.hibernate.SessionFactory;
@@ -29,17 +31,46 @@ public class MainB {
                 .addAnnotatedClass(Student.class)
                 .buildMetadata()
                 .buildSessionFactory();
-        PersonRepository personRepository = new PersonRepository(sessionFactory);
+        TeacherRepository teacherRepository = new TeacherRepository(sessionFactory);
+        StudentRepository studentRepository = new StudentRepository(sessionFactory);
+        TeacherService teacherService = new TeacherService(teacherRepository);
+        StudentService studentService = new StudentService(studentRepository);
 
-        //-------------SignUp Teacher--------------------
+//             -------------SignUp Teacher--------------------
 
-//        TeacherService teacherService = new TeacherService(personRepository);
 //        teacherService.signUp("karim", "filom", LocalDate.of(1340, 6, 6), "A12", "PHD", Degree.PROFESSOR, 120.00);
 
 
 //             -------------SignUp Student--------------------
-//        StudentService studentService = new StudentService(personRepository);
+
 //        studentService.signUp("hassanykachal", "shalgham", LocalDate.of(1381, 4, 9), "B12", "ensani", 2011);
+
+
+//            -------------Update Method--------------------
+//        teacherService.update(2, "Ali", "jafari", LocalDate.of(1360, 6, 6), "B1", "diplome", Degree.ASSISTANT, 32.00);
+//        studentService.update(1, "master", "hashemi", LocalDate.of(1380, 4, 4), "C2", "Bisavad", 2002);
+
+
+//           -------------delete Method--------------------
+
+//        teacherRepository.delete(2);
+//        studentRepository.delete(2);
+
+
+//        ------------loadAll Method--------------------
+
+//        teacherRepository.loadAll();
+//        studentRepository.loadAll();
+
+//        -------------contains Method--------------------
+
+//         System.out.println(teacherRepository.contains(2));
+//        System.out.println(studentRepository.contains(2));
+
+
+
+
+
 
     }
 }
