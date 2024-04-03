@@ -12,6 +12,8 @@ import lombok.*;
 @Entity
 public class Student extends Person {
 
+    private Integer id;
+
     private String studentCode;
 
     private String fieldOfStudy;
